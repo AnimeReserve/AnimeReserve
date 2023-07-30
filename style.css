@@ -1,6 +1,6 @@
 :root {
     --bg-body: #202125;
-    --bg-green: #26baff;
+    --bg-blue: #26baff;
     --bg-black: #121315;
     --bg-gray: rgb(255,255,255,.05);
     --bg-gray-btn: rgba(255,255,255,.1);
@@ -8,8 +8,8 @@
     --color-white: #fff;
     --color-gray1: #ccc;
     --color-gray2: #aaa;
-    --color-green1: #3895c0;
-    --color-green2: #D6AFFF;
+    --color-blue1: #26baff;
+    --color-green2: #afe8ff;
     --color-orange: #FFCE71;
     --fs-10: 10px;
     --fs-11: 11px;
@@ -102,7 +102,7 @@ nav ul {
     }
 
     nav ul a:hover {
-        color: var(--color-green1);
+        color: var(--color-blue1);
     }
 
     nav ul li {
@@ -113,7 +113,7 @@ nav ul {
     }
 
     nav a.active{
-        color: var(--color-green1);
+        color: var(--color-blue1);
     }
 
 
@@ -166,7 +166,7 @@ nav ul {
     .search-container i {
         width: 2.8rem;
         height: 2.8rem;
-        background: var(--bg-green);
+        background: var(--bg-blue);
         border-radius: 50px;
         color: black;
         line-height: 45px;
@@ -201,7 +201,7 @@ nav ul {
     }
 
     .top-search-recommendation a:hover {
-        color: var(--color-green1);
+        color: var(--color-blue1);
     }
 
 .zoro-side-img {
@@ -212,7 +212,7 @@ nav ul {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--bg-green);
+    background-color: var(--bg-blue);
     height: 3.25rem;
     border-radius: 50px;
     margin-top: -2.5rem;
@@ -242,7 +242,7 @@ nav ul {
 }
 
     .share-box p:first-child {
-        color: var(--color-green1);
+        color: var(--color-gray2);
         font-weight: var(--fw-600);
         font-size: calc(var(--fs-12) + 0.6px);
     }
@@ -328,11 +328,11 @@ nav ul {
     }
 
     .trending-posts .user-board-5 .header-board p:first-child {
-        color: var(--color-green2);
+        color: var(--color-gray1);
     }
 
     .trending-posts .user-board-4 .header-board p:first-child {
-        color: var(--color-gray1);
+        color: red;
     }
 
     .trending-posts .header-board {
@@ -399,7 +399,7 @@ nav ul {
     }
 
     .trending-posts .footer-board p:hover {
-        color: var(--color-green1);
+        color: var(--color-blue1);
     }
 
 .trending-posts-btn {  
@@ -441,7 +441,7 @@ footer {
     }
 
     footer a:hover {
-        color: var(--color-green1);
+        color: var(--color-blue1);
 
     }
     
