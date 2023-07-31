@@ -147,7 +147,7 @@ nav ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1 0.5rem;
+    padding: 0 0.5rem;
     margin: 1.7rem 0.85rem 0;
 }
 
