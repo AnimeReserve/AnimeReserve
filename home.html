@@ -98,13 +98,6 @@
             outline: 0;
             background-color: transparent;
         }
-
-        @media screen and (max-width: 575px) {
-            #mobile_menu {
-                top: 5px;
-            }
-        }
-
         @media screen and (max-width: 1400px) {
             #mobile_menu {
                 display: inline-block;
@@ -139,18 +132,17 @@
                 margin-bottom: 15px
             }
             #header #logo {
-                margin: 8px 0 8px 35px;
+                position: fixed;
+                margin-top: 8px;
+                margin-bottom: 8px;
+                margin-right: 0px;
+                margin-left: 35px;
                 height: 34px;
             }
-        }
-
-        @media screen and (max-width: 1299px) {
-            #header #logo {
-                margin-left: 50px;
-                margin-right: 0;
+            #mobile_menu {
+                top: 5px;
             }
         }
-
         #header #logo img {
             height: 100%!important;
             width: auto!important;
