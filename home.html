@@ -56,7 +56,7 @@
             cursor: pointer;
             position: absolute;
             top: 15px;
-            z-index: 400;
+            z-index: 4;
             width: 40px;
             height: 40px;
             text-align: center;
@@ -84,6 +84,21 @@
             line-height: 1
         }
 
+        #header #logo {
+            display: block;
+            height: 40px;
+            margin: 15px 25px 15px 50px;
+            float: left;
+            z-index: 5;
+        }
+
+        a {
+            color: #fff;
+            text-decoration: none !important;
+            outline: 0;
+            background-color: transparent;
+        }
+
         @media screen and (max-width: 575px) {
             #mobile_menu {
                 top: 5px;
@@ -94,11 +109,10 @@
             #mobile_menu {
                 display: inline-block;
             }
-        }
 
-        @media screen and (max-width: 1599px) {
-            .container {
-                padding-left: 15px;
+            #header #logo {
+                margin-left: 50px;
+                margin-right: 20px;
             }
         }
 
@@ -108,6 +122,15 @@
             .container {
                 max-width: 100%;
             }
+
+            #header #logo {
+                margin-left: 50px;
+                margin-right: 20px;
+            }
+
+            .container {
+                padding-left: 15px;
+            }
         }
 
         @media screen and (max-width: 575px) {
@@ -115,6 +138,22 @@
                 height: 50px;
                 margin-bottom: 15px
             }
+        }
+
+        @media screen and (max-width: 1299px) {
+            #header #logo {
+                margin-left: 50px;
+                margin-right: 0;
+            }
+        }
+
+        #header #logo img {
+            height: 100%;
+            width: auto;
+        }
+        img {
+            vertical-align: middle;
+            border-style: none;
         }
     </style>
 </head>
@@ -126,6 +165,9 @@
                 <div id="mobile_menu">
                     <i class="fa fa-bars"></i>
                 </div>
+                <a href="/" id="logo">
+                    <img src="/Img/anilogo.png" alt="AnimeReserve">
+                </a>
             </div>
         </div>
     </div>
