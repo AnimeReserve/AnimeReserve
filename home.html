@@ -8,6 +8,40 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
+        #search {
+            width: 400px;
+            margin-top: 15px;
+            margin-bottom: 15px;
+            margin-left: 0;
+            margin-right: 0;
+            float: left;
+        }
+
+        .search-content {
+            position: relative;
+        }
+
+        form {
+            display: block;
+            margin-top: 0em;
+        }
+
+        .search-content .filter-icon {
+            height: 26px;
+            cursor: pointer;
+            line-height: 26px;
+            font-size: .8em;
+            background: #757575;
+            color: #fff;
+            padding: 0 6px;
+            border-radius: 3px;
+            position: absolute;
+            right: 7px;
+            top: 7px;
+            z-index: 3
+        }
+
+
         #wrapper {
             width: 100%;
             position: relative;
@@ -98,15 +132,24 @@
             outline: 0;
             background-color: transparent;
         }
-        @media screen and (max-width: 1400px) {
-            #mobile_menu {
-                display: inline-block;
-            }
 
-            #header #logo {
-                margin-left: 50px;
-                margin-right: 20px;
-            }
+        #header #logo img {
+            height: 100% !important;
+            width: auto !important;
+        }
+
+        img {
+            vertical-align: middle;
+            border-style: none;
+        }
+
+        div {
+            display: block;
+        }
+        button, input {
+            overflow: visible;
+            margin: 0px;
+            font-family: inherit;
         }
 
         @media screen and (max-width: 1599px) {
@@ -124,6 +167,47 @@
             .container {
                 padding-left: 15px;
             }
+
+            #search {
+                width: 360px;
+            }
+
+        }
+
+        @media screen and (max-width: 1400px) {
+            #mobile_menu {
+                display: inline-block;
+            }
+
+            #header #logo {
+                margin-left: 50px;
+                margin-right: 20px;
+            }
+
+            #search {
+                width: 290px;
+                position: relative;
+                left: auto;
+                top: auto;
+                float: left
+            }
+
+        }
+
+        @media screen and (max-width: 1299px) {
+            .search-content .filter-icon {
+                width: 40px;
+                text-align: center;
+                border-radius: 5px;
+                padding: 0;
+                line-height: 40px;
+                height: 40px;
+                top: 0;
+                left: 0;
+                bottom: auto;
+                font-size: 0;
+                background: rgba(255, 255, 255, .2) !important;
+            }
         }
 
         @media screen and (max-width: 575px) {
@@ -131,6 +215,7 @@
                 height: 50px;
                 margin-bottom: 15px
             }
+
             #header #logo {
                 position: fixed;
                 margin-top: 8px;
@@ -139,22 +224,10 @@
                 margin-left: 35px;
                 height: 34px;
             }
+
             #mobile_menu {
                 top: 5px;
             }
-        }
-        #header #logo img {
-            height: 100%!important;
-            width: auto!important;
-        }
-
-        img {
-            vertical-align: middle;
-            border-style: none;
-        }
-
-        div {
-            display: block;
         }
     </style>
 </head>
@@ -169,6 +242,15 @@
                 <a href="/AnimeReserve" id="logo">
                     <img src="Img/Aniwatchtologoas.png" alt="LOGO">
                 </a>
+                <div id="search">
+                    <div class="search-content">
+                        <form action="/search" autocomplete="off">
+                            <a href="/filter" class="filter-icon">Filter</a>
+                            <input type="text" class="form-control search-input" name="keyword"
+                                placeholder="Search anime..." required>
+                        </form>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
